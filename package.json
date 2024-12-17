@@ -4,7 +4,9 @@
   "description": "Backend para gamesAll",
   "main": "index.js",
   "scripts": {
-    "test": "ts-node-dev src/index.ts"
+    "test": "ts-node-dev src/index.ts",
+     "build": "tsc",
+    "start": "node ./dist/index.js"
   },
   "author": "Yordan Viafara",
   "license": "ISC",
