@@ -34,6 +34,11 @@ class Games extends Model{
         type: DataType.STRING(100)
     })
     declare descripcion: string
+
+    @Column({
+        type: DataType.STRING(100)
+    })
+    declare archivo: string
 }
 
 export default Games
