@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "ts-node-dev src/index.ts",
-     "build": "tsc",
+    "build": "tsc",
     "start": "node ./dist/index.js"
   },
   "author": "Yordan Viafara",
@@ -13,6 +13,7 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-validator": "^7.2.0",
     "pg": "^8.13.1",
     "pg-hstore": "^2.3.4",
     "reflect-metadata": "^0.2.2",

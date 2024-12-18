@@ -2,9 +2,13 @@ import express from 'express';
 import dataBase from './config/baseDatos';
 
 async function conexionDB() {
-    await dataBase.authenticate()
-    await dataBase.sync()
-    console.log('conexion existosa db');
+    try {
+        await dataBase.authenticate()
+        await dataBase.sync()
+        console.log('conexion existosa db');
+    } catch (error) {
+        console.log(error, "error de bd");
+    }
 }
 
 conexionDB()

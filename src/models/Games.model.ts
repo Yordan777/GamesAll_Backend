@@ -8,27 +8,32 @@ class Games extends Model{
     @Column({
         type: DataType.STRING(100)
     })
-    declare paciente : string
+    declare nombre : string
 
     @Column({
         type: DataType.STRING(100)
     })
-    declare propietario: string
+    declare plataforma: string
 
     @Column({
         type: DataType.STRING(100)
     })
-    declare email: string
+    declare tamaño: string
 
     @Column({
         type: DataType.STRING(100)
     })
-    declare fecha: string
+    declare imagen: string
 
     @Column({
         type: DataType.STRING(100)
     })
-    declare sintomas: string
+    declare trailer: string
+
+    @Column({
+        type: DataType.STRING(100)
+    })
+    declare descripcion: string
 }
 
 export default Games
